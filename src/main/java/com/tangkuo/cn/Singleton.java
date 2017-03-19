@@ -11,11 +11,11 @@ public class Singleton {
 	 /** 
      * 单例模式，懒汉式，线程安全 
      */  
-    public static class Singleton11 {  
-        private final static Singleton11 INSTANCE = new Singleton11();  
-        private Singleton11() {  
+    public static class Singleton1 {  
+        private final static Singleton1 INSTANCE = new Singleton1();  
+        private Singleton1() {  
         }  
-        public static Singleton11 getInstance() {  
+        public static Singleton1 getInstance() {  
             return INSTANCE;  
         }  
     }    
@@ -101,15 +101,4 @@ public class Singleton {
         }  
     }
     
-    public static void main(String[] args) {  
-        System.out.println(Singleton11.getInstance() == Singleton11.getInstance());  
-        System.out.println(Singleton2.getInstance() == Singleton2.getInstance());  
-        System.out.println(Singleton3.getInstance() == Singleton3.getInstance());  
-        System.out.println(Singleton4.getInstance() == Singleton4.getInstance());  
-        System.out.println(Singleton5.getInstance() == Singleton5.getInstance());  
-        System.out.println(Singleton6.INSTANCE == Singleton6.INSTANCE);  
-        System.out.println(Singleton7.getInstance() == Singleton7.getInstance());  
-    }
-
-	
 }
