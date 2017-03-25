@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.tangkuo.cn.hibernate.entity.Foo" table="T_FOO">
+		<id name="id" type="integer">
+			<column name="T_ID"></column>
+			<!-- 添加操作有效，可以自动生成一个id值 
+			<generator class="native">
+				<param name="sequence">foo_seq</param>
+			</generator>
+			-->
+			<generator class="increment">
+			</generator>
+		</id>
+		<property name="name" type="string">
+			<column name="T_NAME"></column>
+		</property>
+		<property name="salary" type="double">
+			<column name="T_SALARY"></column>
+		</property>
+		<property name="marry" type="yes_no">
+			<column name="T_MARRY"></column>
+		</property>
+		<property name="hireDate" type="date">
+			<column name="T_HIREDATE"></column>
+		</property>
+		<property name="lastLoginTime" type="timestamp">
+			<column name="T_LAST_LOGIN_TIME"></column>
+		</property>
+		
+	</class>
+</hibernate-mapping>

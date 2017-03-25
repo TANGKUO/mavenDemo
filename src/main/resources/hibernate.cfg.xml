@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+          "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<session-factory>
+		<!-- 方言，指定Hibernate语句生成的sql类型 -->
+		<property name="dialect">
+			org.hibernate.dialect.OracleDialect
+		</property>
+		<property name="connection.url">
+			jdbc:oracle:thin:@172.16.1.230:1521:orcl
+		</property>
+		<property name="connection.username">jsd1303</property>
+		<property name="connection.password">jsd1303</property>
+		<property name="connection.driver_class">
+			oracle.jdbc.OracleDriver
+		</property>
+		<!-- 将底层的sql操作显示出来 -->
+		<property name="show_sql">true</property>
+		<property name="format_sql">true</property>
+		<!-- 根据hbm.xml生成db表 -->
+		<property name="hbm2ddl.auto">update</property>
+		<!--映射资源路径-->
+		<mapping resource="org/tarena/entity/Cost.hbm.xml" />
+		<mapping resource="org/tarena/entity/Foo.hbm.xml" />
+	</session-factory>
+</hibernate-configuration>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<!--类名,表名-->
+    <class name="com.tangkuo.cn.hibernate.entity.Cost" table="COST">
+        <id name="id" type="integer">
+            <column name="ID" />
+            <!-- 采用fee_seq序列生成id主键值 -->
+            <generator class="sequence">
+            	<param name="sequence">fee_seq</param>
+            </generator>
+        </id>
+        <property name="feeName" type="string">
+            <column name="NAME"/>
+        </property>
+        <property name="baseDuration" type="integer">
+            <column name="BASE_DURATION" />
+        </property>
+        <property name="baseCost" type="float">
+            <column name="BASE_COST" />
+        </property>
+        <property name="unitCost" type="float">
+            <column name="UNIT_COST" />
+        </property>
+        <property name="status" type="string">
+            <column name="STATUS"  />
+        </property>
+        <property name="descr" type="string">
+            <column name="DESCR" />
+        </property>
+        <property name="createTime" type="date">
+            <column name="CREATIME" />
+        </property>
+        <property name="startTime" type="date">
+            <column name="STARTIME" />
+        </property>
+        <property name="costType" type="string">
+            <column name="COST_TYPE" />
+        </property>
+    </class>
+</hibernate-mapping>
