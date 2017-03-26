@@ -14,7 +14,7 @@ public class MyGeneratorId implements IdentifierGenerator{
 	  return null;
   }
 
-	@Override
+	//@Override
 	public Serializable generate(SharedSessionContractImplementor arg0, Object arg1) throws HibernateException {
 		// TODO Auto-generated method stub
 		return null;

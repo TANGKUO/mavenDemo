@@ -8,9 +8,9 @@ public class MList<T> {
 	 * 分别完成在队列尾部插入结点和在队列头部删除结点的功能。
 	 */
 		// 插入栈，只用于插入的数据
-		private Stack<T> stack1 = new Stack<>();
+		private Stack<T> stack1 = new Stack<T>();
 		// 弹出栈，只用于弹出数据
-		private Stack<T> stack2 = new Stack<>();
+		private Stack<T> stack2 = new Stack<T>();
 
 		public MList() {
 		}
