@@ -1,0 +1,78 @@
+
+为什么要重载equals（) ?
+	因为Object的equals（）默认是两个对象的引用的比较
+	意思就是指向同一内存，地址则相等，否则不相等
+	如果你现在需要利用对象里面的值来判断是否相等，则
+	重载equals()方法
+
+
+为什么要重载hashcode（）方法？
+	一般的地方不需要重载hashcode( )方法， 只有当类需要放在
+	hashtable、hashmap、hashset等hash结构的集合时才会重
+	载hashcode,那么为什么要重载hashcode( ) ,就Hashmap来说，
+	好比hashmap就是一个大内存块，里面有很多小内存块，小内存
+	块里面是一系列的对象，可以利用hashcode来查找小内存块
+	hashcode%size(小内存块数量)，所以当equals相等时，hashcode
+	也必须相等，而且如果是object对象，必须重载hashcode和equals
+
+
+为什么重载equals同时也需要重写hashcode？
+	在将对象存入集合中，有时需要根据equals和hashcode方法判定
+	要存入的两个对象是否一致，如果这两个方法判定的结果不一致，会
+	出现意想不到的错误，即使一个普通对象当前没有必要重写hashcode
+	方法，那么从长远的角度来看，为了避免今后一些不必要的麻烦，最好
+	还是将equals和hashcode方法一同重写，并保证判定结果一致。
+	这也看做是一项约定和惯例
+
+
+转发与重定向的区别：
+ 
+
+同：
+     都是可以实现组件之间的跳转，从某个组件执行完之后，要调用另一个组件的方法。
+
+异：
+     a.浏览器的地址栏中的url地址：重定向会变，转发不变
+     b.重定向是两次请求，转发是一次请求.
+     c.跳转的目的地，重定向是任意的，转发是同一容器内两个组件之间的跳转。
+     d.当一个组件完成了所有工作时，使用重定向，
+       而，一个组件完成了部分工作，需要另外一个组件继续完成，则使用转发。
+     e.request 的使用周期 重定向的request销毁 ，到下一个页面时 重新建立，
+        而，转发是共享一个request请求。
+
+代码：
+转发：
+request.setAttribute(String key,Object obj); 
+request.getRequestDispacther(*.jsp/*.action).forward(request,response);
+
+重定向：
+response.sendRedirect(*.jsp/*.action);
+
+
+1.转发只能转到本web应用中的资源，对于重定向，如果url是绝对路径，就可以转到其他站点资源。
+2.在浏览器地址栏上显示的url是不同的，转发始终保持初始的url，重定向则会由初始的url变成重定向目标url。
+
+3.转发方法的调用者和被调用者之间共享相同的request对象和response对象，他们属于同一个访问请求和响应过程，
+重定向方法调用者和被调用者使用各自的request对象和response对象，
+
+4.对于同一个web应用程序的内部资源之间的跳转，并要使用httpservletrequest.setAttribute方法传递预处理请求对象，
+那就应该使用转发。不同的web应用程序之间的重定向，特别是要重定向到另外一个web站点上的资源的情况，则使用重定向。
+
+5.浏览器对请求作出的响应不同。重定向：直接作出响应让浏览器发出一个新的访问请求。转发：向服务器内部发送请求，
+服务器返回响应结果。
+
+response.sendRedirect(url)他们属于两个独立的访问请求和响应过程。
+
+
+request.setAttribute(String,Object);
+request.getRequestDispatcher(url).forward();
+
+1)一件事情已经做完，而转发只做一部分工作；
+2）浏览器的地址栏发生两次请求，转发地址栏没有变；
+3）request是不能共享的，转发是共享的request；
+4）可以定向任何位置，只能在一个容器组建内。
+
+
+
+
+
