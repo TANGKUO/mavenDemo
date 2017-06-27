@@ -1,0 +1,77 @@
+package com.tangkuo.cn.pay;
+
+/**
+ * 
+ * @ClassName: TtyException
+ * @Description: (自定义异常实现类)
+ * @author tangkuo
+ * @date 2017年6月27日 下午11:13:29
+ *
+ */
+public class TtyException extends RuntimeException {
+
+	/**
+	 * @Fields serialVersionUID : (序列号id)
+	 */
+	private static final long serialVersionUID = 1L;
+	private final String ERROR_MSG = "error";
+
+	private String errCode;
+	private Object[] args;
+	private String errMsg;
+
+	public TtyException() {
+		super();
+	}
+
+	public TtyException(String message, Throwable cause) {
+		super(message, cause);
+		this.errMsg = message;
+		this.errCode = this.ERROR_MSG;
+	}
+
+	public TtyException(String message) {
+		super(message);
+		this.errMsg = message;
+		this.errCode = this.ERROR_MSG;
+	}
+
+	public TtyException(Throwable cause) {
+		super(cause);
+	}
+
+	public TtyException(String errCode, String errMsg) {
+		super(errCode + ":" + errMsg);
+		this.errCode = errCode;
+		this.errMsg = errMsg;
+	}
+
+	public TtyException(String errCode, String errMsg, Object[] args) {
+		super(errCode + ":" + errMsg);
+		this.errCode = errCode;
+		this.errMsg = errMsg;
+		this.args = args;
+	}
+
+	@Override
+	public synchronized Throwable fillInStackTrace() {
+		return null;
+	}
+
+	public String getErrCode() {
+		return this.errCode;
+	}
+
+	public String getErrMsg() {
+		return this.errMsg;
+	}
+
+	public Object[] getArgs() {
+		return args;
+	}
+
+	public void setArgs(Object[] args) {
+		this.args = args;
+	}
+
+}
