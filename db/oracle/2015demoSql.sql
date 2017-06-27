@@ -1,6 +1,6 @@
 --查询导航表信息。
 
-select *  from mallm_navig;
+select *  from mallm_navig; 
 
 --导航表结构信息。
 --
