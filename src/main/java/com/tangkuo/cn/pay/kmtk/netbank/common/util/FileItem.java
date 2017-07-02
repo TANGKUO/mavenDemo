@@ -1,12 +1,10 @@
-package com.kame.micropay.commons.util;
+package com.tangkuo.cn.pay.kmtk.netbank.common.util;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
-
-import com.kame.micropay.commons.signtype.KmpUtils;
 
 public class FileItem {
 	private String fileName;
@@ -17,7 +15,8 @@ public class FileItem {
 	/**
 	 * 基于本地文件的构造器。
 	 * 
-	 * @param file 本地文件
+	 * @param file
+	 *            本地文件
 	 */
 	public FileItem(File file) {
 		this.file = file;
@@ -26,7 +25,8 @@ public class FileItem {
 	/**
 	 * 基于文件绝对路径的构造器。
 	 * 
-	 * @param filePath 文件绝对路径
+	 * @param filePath
+	 *            文件绝对路径
 	 */
 	public FileItem(String filePath) {
 		this(new File(filePath));
@@ -35,8 +35,10 @@ public class FileItem {
 	/**
 	 * 基于文件名和字节流的构造器。
 	 * 
-	 * @param fileName 文件名
-	 * @param content 文件字节流
+	 * @param fileName
+	 *            文件名
+	 * @param content
+	 *            文件字节流
 	 */
 	public FileItem(String fileName, byte[] content) {
 		this.fileName = fileName;
@@ -46,9 +48,12 @@ public class FileItem {
 	/**
 	 * 基于文件名、字节流和媒体类型的构造器。
 	 * 
-	 * @param fileName 文件名
-	 * @param content 文件字节流
-	 * @param mimeType 媒体类型
+	 * @param fileName
+	 *            文件名
+	 * @param content
+	 *            文件字节流
+	 * @param mimeType
+	 *            媒体类型
 	 */
 	public FileItem(String fileName, byte[] content, String mimeType) {
 		this(fileName, content);
@@ -64,7 +69,7 @@ public class FileItem {
 
 	public String getMimeType() throws IOException {
 		if (this.mimeType == null) {
-			this.mimeType = KmpUtils.getMimeType(getContent());
+			this.mimeType = TkpUtils.getMimeType(getContent());
 		}
 		return this.mimeType;
 	}
@@ -92,6 +97,13 @@ public class FileItem {
 			}
 		}
 		return this.content;
+	}
+
+	static class TkpUtils {
+		public static String getMimeType(byte[] content) {
+			return null;
+		}
+
 	}
 
 }

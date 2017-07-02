@@ -1,26 +1,17 @@
-/**
- * Copyright (c) 2011-2015 All Rights Reserved.
- */
-package com.kame.micropay.commons;
+package com.tangkuo.cn.pay.kmtk.netbank.common;
 
+import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.ui.ModelMap;
 
-import com.kame.micropay.commons.config.properties.Property;
-import com.kame.micropay.commons.internal.parser.MapConverter;
-import com.kame.micropay.commons.util.Md5Utils;
-import com.kame.micropay.commons.util.StringUtils;
-import com.kame.micropay.commons.util.ValidateUtil;
-import com.kame.micropay.commons.util.validatetype.CheckAdd;
-import com.kame.micropay.commons.util.validatetype.CheckDel;
+import com.tangkuo.cn.pay.kmtk.netbank.common.util.Md5Utils;
+import com.tangkuo.cn.pay.kmtk.netbank.common.util.Property;
+import com.tangkuo.cn.pay.kmtk.netbank.common.util.ValidateUtil;
+import com.tangkuo.cn.pay.kmtk.netbank.common.util.validatetype.CheckAdd;
+import com.tangkuo.cn.pay.kmtk.netbank.common.util.validatetype.CheckDel;
 
-/**
- *
- *
- * @author heming
- * @version $Id: BankPlatformUtil.java 2015年9月9日 上午11:50:01 $
- */
+
 public class BankPlatformUtil {
 	
 	private static Logger log = LoggerFactory.getLogger(BankPlatformUtil.class);

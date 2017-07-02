@@ -1,4 +1,4 @@
-package com.kame.micropay.commons.util;
+package com.tangkuo.cn.pay.kmtk.netbank.common.util;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
@@ -6,12 +6,6 @@ import java.security.NoSuchAlgorithmException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-/**
- * MD5加密算法
- * 
- * @author xavier
- * @version $Id: Md5Utils.java 2014年9月3日 下午4:01:08 $
- */
 public class Md5Utils {
 
     private static Logger log = LoggerFactory.getLogger(Md5Utils.class);

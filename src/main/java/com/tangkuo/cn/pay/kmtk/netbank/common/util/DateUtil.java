@@ -1,7 +1,4 @@
-/**
- * 
- */
-package com.kame.micropay.commons.util;
+package com.tangkuo.cn.pay.kmtk.netbank.common.util;
 
 import java.text.DateFormat;
 import java.text.ParseException;
@@ -9,17 +6,18 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
+import org.apache.commons.httpclient.util.DateParseException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.kame.micropay.commons.TtyException;
+import com.tangkuo.cn.pay.kmtk.netbank.common.TtyException;
+
 
 /**
  * 时间工具类
  * <p>
  * 提供了除{@link org.apache.commons.lang3.time.DateUtils}工具类之外的一些对时间的操作
  * 
- * @author 464281
  */
 public class DateUtil {
 

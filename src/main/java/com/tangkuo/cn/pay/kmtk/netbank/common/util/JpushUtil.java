@@ -1,13 +1,13 @@
-package com.kame.micropay.commons.util;
+package com.tangkuo.cn.pay.kmtk.netbank.common.util;
 
 import java.util.Map;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import cn.jiguang.common.resp.APIConnectionException;
+import cn.jiguang.common.resp.APIRequestException;
 import cn.jpush.api.JPushClient;
-import cn.jpush.api.common.resp.APIConnectionException;
-import cn.jpush.api.common.resp.APIRequestException;
 import cn.jpush.api.push.PushResult;
 import cn.jpush.api.push.model.Message;
 import cn.jpush.api.push.model.Platform;
@@ -18,7 +18,6 @@ import cn.jpush.api.push.model.notification.IosNotification;
 import cn.jpush.api.push.model.notification.Notification;
 import cn.jpush.api.push.model.notification.Notification.Builder;
 
-import com.kame.micropay.commons.config.properties.Property;
 
 /**
  * 极光推送工具类

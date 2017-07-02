@@ -1,4 +1,4 @@
-package com.kame.micropay.commons.util;
+package com.tangkuo.cn.pay.kmtk.netbank.common.util;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -8,13 +8,12 @@ import java.net.SocketException;
 import org.apache.commons.net.ftp.FTP;
 import org.apache.commons.net.ftp.FTPClient;
 import org.apache.commons.net.ftp.FTPReply;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
  * 采用的是apache commons-net架包中的ftp工具类实现的
- * 
- * @author chiyong
  * 
  */
 public class FtpCollectionUtil {

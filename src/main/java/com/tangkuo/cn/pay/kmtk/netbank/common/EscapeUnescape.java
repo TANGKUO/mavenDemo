@@ -1,13 +1,5 @@
-/**
- * Project Name:kame-bank
- * File Name:EscapeUnescape.java
- * Package Name:com.kame.micropay.netbank.service.adapter.util
- * Date:2015年11月30日下午3:03:19
- * Copyright (c) 2015, Kame-Pay All Rights Reserved.
- *
- */
 
-package com.kame.micropay.commons;
+package com.tangkuo.cn.pay.kmtk.netbank.common;
 
 import org.apache.commons.lang3.StringUtils;
 
@@ -17,9 +9,6 @@ import org.apache.commons.lang3.StringUtils;
  * Reason: 对中文等特别字符加密处理. <br/>
  * date: 2015年11月30日 下午3:03:19 <br/>
  *
- * @author Bill Huang
- * @version 
- * @since JDK 1.7
  */
 public class EscapeUnescape {
 
@@ -27,8 +16,6 @@ public class EscapeUnescape {
 	 * escape : 用url混淆的方式加密字符串
 	 * @param src 
 	 * @return String
-	 * @since 
-	 * @author Bill Huang
 	 * */
 	public static String escape(String src) {
 		if(StringUtils.isEmpty(src)) return StringUtils.EMPTY;
@@ -58,8 +45,6 @@ public class EscapeUnescape {
 	 * unescape : 用url混淆的方式解密字符串
 	 * @param src 
 	 * @return String
-	 * @since 
-	 * @author Bill Huang
 	 * */
 	public static String unescape(String src) {
 		if(StringUtils.isEmpty(src)) return StringUtils.EMPTY;

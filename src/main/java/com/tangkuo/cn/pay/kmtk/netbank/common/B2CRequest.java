@@ -1,19 +1,10 @@
-/**
- * Copyright (c) 2011-2015 All Rights Reserved.
- */
-package com.kame.micropay.commons;
+package com.tangkuo.cn.pay.kmtk.netbank.common;
 
 import javax.validation.constraints.NotNull;
 
-import com.kame.micropay.commons.util.validatetype.CheckAdd;
-import com.kame.micropay.commons.util.validatetype.CheckDel;
+import com.tangkuo.cn.pay.kmtk.netbank.common.util.validatetype.CheckAdd;
+import com.tangkuo.cn.pay.kmtk.netbank.common.util.validatetype.CheckDel;
 
-/**
- *
- *
- * @author heming
- * @version $Id: NetBankB2CRequest.java 2015年9月9日 上午11:50:44 $
- */
 public class B2CRequest extends TtyObject{
 
 	/**

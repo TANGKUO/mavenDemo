@@ -1,12 +1,12 @@
-package com.kame.micropay.commons.util;
+package com.tangkuo.cn.pay.kmtk.netbank.common.util;
 
 
+import org.bouncycastle.jce.provider.JCEKeyGenerator.DES;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.kame.micropay.commons.TtyException;
-import com.kame.micropay.commons.config.properties.Property;
-import com.kame.micropay.commons.signtype.DES;
+import com.tangkuo.cn.pay.kmtk.netbank.common.TtyException;
+
 
 public class DESUtil {
 
@@ -61,20 +61,5 @@ public class DESUtil {
 		}
 	}
 	
-	public static void main(String [] args){
-		String key = "kiIoeWGSqYmzgSxIysJwSmq2As0KhKrS";
-		System.out.println(DES.desEncrypt("redis",key));
-		System.out.println(DES.desEncrypt("kmpayzf_2016",key));
-		
-		System.out.println(DES.desEncrypt("kmpaycwg",key));
-		System.out.println(DES.desEncrypt("kmpaycwg_2016",key));
-		
-		System.out.println(DES.desEncrypt("kmpay",key));
-		System.out.println(DES.desEncrypt("kmpay_qaz123",key));
-		
-		
-		
-		//String val = DES.desEncrypt("kmpay", key);
-		//System.out.println(DES.desDecrypt(val, key));
-	}
+
 }

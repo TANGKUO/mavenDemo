@@ -1,7 +1,4 @@
-/**
- * Copyright (c) 2011-2014 All Rights Reserved.
- */
-package com.kame.micropay.commons;
+package com.tangkuo.cn.pay.kmtk.netbank.common;
 
 import java.io.BufferedInputStream;
 import java.io.ByteArrayInputStream;
@@ -16,11 +13,11 @@ import java.io.OutputStream;
 
 import javax.annotation.Resource;
 
+import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.scheduling.annotation.Async;
 
-import com.kame.micropay.commons.util.StringUtils;
 
 /**
  * 文件系统服务, 读/写

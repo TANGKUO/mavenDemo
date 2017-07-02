@@ -1,29 +1,12 @@
-/**
- * Project Name:kame-commons
- * File Name:B2BRequest.java
- * Package Name:com.kame.micropay.commons
- * Date:2016年1月3日下午3:59:04
- * Copyright (c) 2016, Kame-Pay All Rights Reserved.
- *
- */
 
-package com.kame.micropay.commons;
+package com.tangkuo.cn.pay.kmtk.netbank.common;
 
 import javax.validation.constraints.NotNull;
 
-import com.kame.micropay.commons.util.validatetype.CheckAdd;
-import com.kame.micropay.commons.util.validatetype.CheckDel;
+import com.tangkuo.cn.pay.kmtk.netbank.common.util.validatetype.CheckAdd;
+import com.tangkuo.cn.pay.kmtk.netbank.common.util.validatetype.CheckDel;
 
-/**
- * ClassName: B2BRequest <br/>
- * Function: ADD FUNCTION. <br/>
- * Reason: ADD REASON(可选). <br/>
- * Date: 2016年12月25日 下午3:59:04 <br/>
- *
- * @author Bill Huang
- * @version 1.1
- * @since JDK 1.7
- */
+
 public class B2BRequest extends TtyObject {
 
 	/**

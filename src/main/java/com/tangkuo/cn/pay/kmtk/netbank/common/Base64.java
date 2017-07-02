@@ -1,4 +1,4 @@
-package com.kame.micropay.commons;
+package com.tangkuo.cn.pay.kmtk.netbank.common;
 
 public final class Base64 {
 

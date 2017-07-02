@@ -1,10 +1,8 @@
-package com.kame.micropay.commons;
+package com.tangkuo.cn.pay.kmtk.netbank.common;
 
 /**
  * @ClassName: CodeDesc
  * @Description: 定义APP接口所有请求响应编码
- * @author Tomsion
- * @date 2015年10月28日 下午10:10:18
  * 
  */
 public enum CodeDesc {

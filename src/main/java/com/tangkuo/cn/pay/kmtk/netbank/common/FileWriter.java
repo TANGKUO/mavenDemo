@@ -1,7 +1,4 @@
-/**
- * Copyright (c) 2011-2015 All Rights Reserved.
- */
-package com.kame.micropay.commons;
+package com.tangkuo.cn.pay.kmtk.netbank.common;
 
 import java.io.ByteArrayInputStream;
 import java.io.File;
@@ -18,8 +15,6 @@ import org.springframework.stereotype.Service;
 
 /**
  * 文件写入器
- * @author xavier
- * @version $Id: FileWriter.java 2015年1月29日 下午8:38:25 $
  */
 @Service("fileWriter")
 public class FileWriter {
