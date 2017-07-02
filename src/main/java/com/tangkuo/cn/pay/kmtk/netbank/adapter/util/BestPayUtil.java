@@ -1,7 +1,4 @@
-/**
- * Copyright (c) 2011-2015 All Rights Reserved.
- */
-package com.kame.micropay.netbank.service.adapter.util;
+package com.tangkuo.cn.pay.kmtk.netbank.adapter.util;
 
 import java.security.MessageDigest;
 import java.util.Iterator;
@@ -11,12 +8,6 @@ import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-/**
- *
- *
- * @author Bill_Huang
- * @version $Id: BestPayUtil.java 2015年11月2日 上午11:43:44 $
- */
 public class BestPayUtil {
 
 	private BestPayUtil(){}

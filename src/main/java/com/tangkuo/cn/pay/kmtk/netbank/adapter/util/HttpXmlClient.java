@@ -1,7 +1,4 @@
-/**
- * Copyright (c) 2011-2015 All Rights Reserved.
- */
-package com.kame.micropay.netbank.service.adapter.util;
+package com.tangkuo.cn.pay.kmtk.netbank.adapter.util;
 
 import java.io.BufferedInputStream;
 import java.io.File;
@@ -39,7 +36,7 @@ import org.apache.http.util.EntityUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.kame.micropay.netbank.service.util.ObjectUtils;
+import com.tangkuo.cn.pay.kmtk.netbank.ObjectUtils;
 
 /**
  *

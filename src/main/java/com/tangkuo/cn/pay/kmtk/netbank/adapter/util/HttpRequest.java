@@ -1,7 +1,6 @@
-package com.kame.micropay.netbank.service.adapter.util;
+package com.tangkuo.cn.pay.kmtk.netbank.adapter.util;
 
 import java.io.BufferedReader;
-import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -19,12 +18,13 @@ import java.util.Map;
 
 import org.apache.commons.httpclient.HttpClient;
 import org.apache.commons.httpclient.protocol.Protocol;
+import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import cn.jpush.api.utils.StringUtils;
+import com.tangkuo.cn.pay.kmtk.netbank.common.TtyException;
 
-import com.kame.micropay.commons.TtyException;
+
 
 public class HttpRequest {
 	

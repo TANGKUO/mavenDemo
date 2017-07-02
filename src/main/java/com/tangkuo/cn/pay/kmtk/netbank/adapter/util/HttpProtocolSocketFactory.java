@@ -1,4 +1,4 @@
-package com.kame.micropay.netbank.service.adapter.util;
+package com.tangkuo.cn.pay.kmtk.netbank.adapter.util;
 
 import java.io.IOException; 
 import java.net.InetAddress; 

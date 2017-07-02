@@ -1,4 +1,4 @@
-package com.kame.micropay.netbank.service.adapter.util;
+package com.tangkuo.cn.pay.kmtk.netbank.adapter.util;
 
 import org.dom4j.Document;
 import org.dom4j.DocumentException;
@@ -9,8 +9,6 @@ import org.slf4j.LoggerFactory;
 /** 
 * @ClassName: BankDocumentUtil 
 * @Description: 解析银行报文数据
-* @author fubin
-* @date 2015年9月18日 下午4:59:48 
 *  
 */ 
 public class BankDocumentUtil {

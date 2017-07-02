@@ -17,7 +17,7 @@ import java.util.Random;
 * @date 2017年7月2日 下午1:55:00
 *
  */
-public class Utils {
+public class ObjectUtils {
 
 	/** 可以用于判断Object,String,Map,Collection,String,Array是否为空 */
     public static boolean isNull(Object value) {

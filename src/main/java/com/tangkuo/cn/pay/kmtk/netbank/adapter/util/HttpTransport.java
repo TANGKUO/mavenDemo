@@ -1,4 +1,4 @@
-package com.kame.micropay.netbank.service.adapter.util;
+package com.tangkuo.cn.pay.kmtk.netbank.adapter.util;
 
 import java.util.List;
 
@@ -10,22 +10,27 @@ import org.apache.http.client.methods.HttpPost;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.util.EntityUtils;
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
- * com.bocnet.communitcate.HttpTransport
- * @description
- *              HTTP通信类
- * @author dawei@2014-3-18
- * @modified_by dawei@2014-3-18
+ * 
+ * @ClassName: HttpTransport
+ * @Description: (HTTP通信类,)
+ * @author tangkuo
+ * @date 2017年7月2日 下午3:38:15
+ * @see com.bocnet.communitcate.HttpTransport
  */
 public final class HttpTransport {
-	private static Logger logger = Logger.getLogger("bocLog4File");
+	private static Logger logger = LoggerFactory.getLogger(HttpTransport.class);
 
 	/**
 	 * 实现采用POST方法向目标地址进行HTTP连接
-	 * @param uri 目标地址
-	 * @param nvps KEY/VALUE对
+	 * 
+	 * @param uri
+	 *            目标地址
+	 * @param nvps
+	 *            KEY/VALUE对
 	 * @return utf-8 string of response
 	 * @throws Exception
 	 */
@@ -34,7 +39,7 @@ public final class HttpTransport {
 		try {
 			HttpPost httpPost = new HttpPost(uri);
 			httpPost.setEntity(new UrlEncodedFormEntity(nvps));
-			logger.debug(httpPost.getRequestLine());
+			logger.debug("", httpPost.getRequestLine());
 			logger.debug(EntityUtils.toString(httpPost.getEntity()));
 
 			CloseableHttpResponse response = httpclient.execute(httpPost);
@@ -53,8 +58,11 @@ public final class HttpTransport {
 
 	/**
 	 * 实现采用POST方法向目标地址进行HTTP连接
-	 * @param uri 目标地址
-	 * @param nvps KEY/VALUE对
+	 * 
+	 * @param uri
+	 *            目标地址
+	 * @param nvps
+	 *            KEY/VALUE对
 	 * @return byte array of response
 	 * @throws Exception
 	 */

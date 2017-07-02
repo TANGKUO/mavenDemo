@@ -1,4 +1,4 @@
-package com.kame.micropay.netbank.service.adapter.util;
+package com.tangkuo.cn.pay.kmtk.netbank.adapter.util;
 
 import java.io.UnsupportedEncodingException;
 import java.security.MessageDigest;

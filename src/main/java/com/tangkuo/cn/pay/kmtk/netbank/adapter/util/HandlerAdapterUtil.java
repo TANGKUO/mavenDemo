@@ -1,22 +1,12 @@
-package com.kame.micropay.netbank.service.adapter.util;
+package com.tangkuo.cn.pay.kmtk.netbank.adapter.util;
 
 import java.util.Date;
 import java.util.Map;
 
-import com.kame.micropay.netbank.domain.BankFileDownLog;
-import com.kame.micropay.netbank.domain.ResultStatus;
-import com.kame.micropay.netbank.domain.ResultResp;
-import com.kame.micropay.netbank.domain.b2c.CallBackPayResp;
-import com.kame.micropay.netbank.domain.b2c.PayResp;
-import com.kame.micropay.netbank.domain.b2c.QueryResp;
-import com.kame.micropay.netbank.enums.BankOrderStatus;
-import com.kame.micropay.netbank.enums.SettleStatus;
 
 /** 
 * @ClassName: HandlerAdapterUtil 
 * @Description: B2c工具类
-* @author fubin
-* @date 2015年9月8日 下午3:03:02 
 *  
 */ 
 public class HandlerAdapterUtil {

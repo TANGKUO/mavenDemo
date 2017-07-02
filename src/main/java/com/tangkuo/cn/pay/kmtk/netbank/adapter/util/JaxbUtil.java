@@ -1,7 +1,4 @@
-/**
- * Copyright (c) 2011-2015 All Rights Reserved.
- */
-package com.kame.micropay.netbank.service.adapter.util;
+package com.tangkuo.cn.pay.kmtk.netbank.adapter.util;
 
 import java.io.StringReader;
 import java.io.StringWriter;
@@ -16,8 +13,6 @@ import org.slf4j.LoggerFactory;
 
 /**
  * Jaxb2工具类
- * @author		Bill_Huang
- * @create		2015-10-29 下午2:40:14
  */
 public class JaxbUtil {
 

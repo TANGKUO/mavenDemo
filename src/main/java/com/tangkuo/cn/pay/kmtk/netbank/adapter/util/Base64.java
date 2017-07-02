@@ -1,13 +1,9 @@
-package com.kame.micropay.netbank.service.adapter.util;
+package com.tangkuo.cn.pay.kmtk.netbank.adapter.util;
 
 
 /**
  * com.bocnet.util.Base64
  * @description 
- * 		
- * @author bocnet@2014-3-18
- *
- * @modified_by 
  */
 public final class Base64 {
 	private static final Base64Coder coder = new Base64Coder();

@@ -1,4 +1,4 @@
-package com.kame.micropay.netbank.service.adapter.util;
+package com.tangkuo.cn.pay.kmtk.netbank.adapter.util;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -13,19 +13,14 @@ import javax.annotation.Resource;
 import org.dom4j.Document;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.stereotype.Component;
 
-import com.kame.micropay.commons.config.properties.Property;
-import com.kame.micropay.commons.util.DateUtil;
-import com.kame.micropay.netbank.service.ICachedService;
-import com.kame.micropay.netbank.service.impl.AbstractApiServiceAdapter;
-import com.yspay.util.StringUtil;
+import com.tangkuo.cn.pay.kmtk.netbank.common.util.DateUtil;
+import com.tangkuo.cn.pay.kmtk.netbank.common.util.Property;
+import com.tangkuo.cn.utils.string.StringUtil;
 
 /** 
 * @ClassName: BocUtil 
 * @Description: 中行工具类
-* @author fubin
-* @date 2015年9月22日 上午11:29:21 
 *  
 */
 @Component

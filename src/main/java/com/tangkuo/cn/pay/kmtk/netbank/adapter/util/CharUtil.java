@@ -1,13 +1,4 @@
-/**
- * Project Name:kame-bank
- * File Name:CharUtil.java
- * Package Name:com.kame.micropay.netbank.service.adapter.util
- * Date:2016年3月8日下午4:38:46
- * Copyright (c) 2016, Kame-Pay All Rights Reserved.
- *
- */
-
-package com.kame.micropay.netbank.service.adapter.util;
+package com.tangkuo.cn.pay.kmtk.netbank.adapter.util;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
@@ -19,13 +10,6 @@ import org.apache.commons.lang3.StringUtils;
  * ClassName: CharUtil <br/>
  * Java判断一个字符串是否有中文一般情况是利用Unicode编码(CJK统一汉字的编码区间：0x4e00–0x9fbb)的正则来做判断，
  * 但是其实这个区间来判断中文不是非常精确，因为有些中文的标点符号比如：，。等等是不能识别的。
- * Function: ADD FUNCTION. <br/>
- * Reason: ADD REASON(可选). <br/>
- * date: 2016年3月8日 下午4:38:46 <br/>
- *
- * @author Bill Huang
- * @version 1.1
- * @since JDK 1.7
  */
 public class CharUtil {
 	
@@ -34,7 +18,6 @@ public class CharUtil {
 	* @Description: 根据Unicode编码完美的判断中文汉字和符号
 	* @param char c
 	* @return boolean   返回类型 
-	* @author Bill Huang
 	*/
 	public static boolean isChinese(char c) {
 		Character.UnicodeBlock ub = Character.UnicodeBlock.of(c);
@@ -55,7 +38,6 @@ public class CharUtil {
 	* @Description: 完整的判断中文汉字和符号
 	* @param String strName
 	* @return boolean   返回类型 
-	* @author Bill Huang
 	*/
 	public static boolean isChinese(String strName) {
 			char[] ch = strName.toCharArray();
@@ -73,7 +55,6 @@ public class CharUtil {
 	* @Description: 只能判断部分CJK字符（CJK统一汉字）
 	* @param String str
 	* @return boolean   返回类型 
-	* @author Bill Huang
 	*/
 	public static boolean isChineseByREG(String str) {
 		if (StringUtils.isEmpty(str)) {
@@ -88,7 +69,6 @@ public class CharUtil {
 	* @Description: 只能判断部分CJK字符（CJK统一汉字）
 	* @param String str
 	* @return boolean   返回类型 
-	* @author Bill Huang
 	*/
 	public static boolean isChineseByName(String str) {
 		if (StringUtils.isEmpty(str)) {
@@ -106,7 +86,6 @@ public class CharUtil {
 	* @Description: 用charset编码加密并替换字符串里面的中文(默认为UTF8)
 	* @param String str
 	* @return String 返回类型 
-	* @author Bill Huang
 	*/
 	@SuppressWarnings("deprecation")
 	public static String replaceChineseEncode(String str,String charset) {
@@ -138,7 +117,6 @@ public class CharUtil {
 	* @Description: 用GBK编码加密替换字符串里面的中文
 	* @param String str
 	* @return String 返回类型 
-	* @author Bill Huang
 	*/
 	public static String replaceChineseEncodeGbk(String str) {
 		return replaceChineseEncode(str,"GBK");
@@ -149,7 +127,6 @@ public class CharUtil {
 	* @Description: 用UTF8编码加密替换字符串里面的中文
 	* @param String str
 	* @return String 返回类型 
-	* @author Bill Huang
 	*/
 	public static String replaceChineseEncodeUTF8(String str) {
 		return replaceChineseEncode(str,"UTF-8");

@@ -1,13 +1,4 @@
-/**
- * Project Name:kame-bank
- * File Name:D9BillUtil.java
- * Package Name:com.kame.micropay.netbank.service.adapter.util
- * Date:2016年1月23日下午5:54:19
- * Copyright (c) 2016, Kame-Pay All Rights Reserved.
- *
- */
-
-package com.kame.micropay.netbank.service.adapter.util;
+package com.tangkuo.cn.pay.kmtk.netbank.adapter.util;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
@@ -27,22 +18,13 @@ import javax.net.ssl.TrustManager;
 import javax.net.ssl.X509TrustManager;
 
 import org.apache.commons.io.IOUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.util.StringUtils;
 
-import com.kame.micropay.netbank.service.util.XmlFormatter;
+import com.tangkuo.cn.pay.kmtk.netbank.XmlFormatter;
+import com.tangkuo.cn.pay.kmtk.netbank.common.Constants;
 
-/**
- * ClassName: D9BillUtil <br/>
- * Function: ADD FUNCTION. <br/>
- * Reason: ADD REASON(可选). <br/>
- * date: 2016年1月23日 下午5:54:19 <br/>
- *
- * @author Bill Huang
- * @version 1.1
- * @since JDK 1.7
- */
 public class D9BillUtil {
 	
 	final static Logger log = LoggerFactory.getLogger(D9BillUtil.class);
@@ -122,7 +104,7 @@ public class D9BillUtil {
 					bos.write(receiveBuffer, 0, readBytesSize);//从receiveBuffer内存处的0偏移开始写，写与readBytesSize长度相等的字节
 					readBytesSize = is.read(receiveBuffer);
 				}
-				reqData = new String(bos.toByteArray(), com.kame.micropay.commons.Constants.CHARSET_UTF8);//编码后的tr2报文
+				reqData = new String(bos.toByteArray(), Constants.CHARSET_UTF8);//编码后的tr2报文
 		    }
 		    respXml = XmlFormatter.format(reqData);
 		    //log.info(respXml);
