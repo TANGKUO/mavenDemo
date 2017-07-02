@@ -1,4 +1,4 @@
-package com.kame.micropay.netbank.service.adapter.util;
+package com.tangkuo.cn.pay.kmtk.netbank.adapter.util;
 
 import java.io.FileInputStream;
 import java.io.InputStream;
@@ -7,14 +7,9 @@ import java.security.SignatureException;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
-import com.kame.micropay.commons.config.properties.Property;
+import com.tangkuo.cn.pay.kmtk.netbank.common.util.Property;
 
-/**
- * com.bocnet.utils.SecurityAgent
- * @description
- * @author dawei@2014-3-18
- * @modified_by dawei@2014-3-18
- */
+
 public class SecurityAgent {
 
 	private static Log logger = LogFactory.getLog(SecurityAgent.class);

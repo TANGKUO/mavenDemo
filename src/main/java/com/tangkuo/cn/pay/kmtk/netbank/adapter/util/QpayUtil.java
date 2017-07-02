@@ -1,25 +1,12 @@
-package com.kame.micropay.netbank.service.adapter.util;
+package com.tangkuo.cn.pay.kmtk.netbank.adapter.util;
 
 import java.util.Date;
 
 import org.apache.commons.lang3.StringUtils;
 
-import com.kame.micropay.account.enums.CurrencyType;
-import com.kame.micropay.base.enums.GatewayType;
-import com.kame.micropay.netbank.domain.BankTrade;
-import com.kame.micropay.netbank.domain.qpay.AgreementReq;
-import com.kame.micropay.netbank.domain.qpay.PayReq;
-import com.kame.micropay.netbank.domain.qpay.SingleRefundReq;
-import com.kame.micropay.netbank.enums.BankTradeStatus;
-import com.kame.micropay.netbank.enums.BussInterfaceType;
+import com.tangkuo.cn.pay.kmtk.netbank.adapter.domain.BankTrade;
 
-/** 
-* @ClassName: QpayUtil 
-* @Description: 快捷 工具类
-* @author fubin
-* @date 2015年12月16日 下午5:34:41 
-*  
-*/ 
+
 public class QpayUtil {
 	/** 
 	* @Title: sendAgreement 

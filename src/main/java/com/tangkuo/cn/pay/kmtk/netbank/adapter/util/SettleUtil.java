@@ -1,4 +1,4 @@
-package com.kame.micropay.netbank.service.adapter.util;
+package com.tangkuo.cn.pay.kmtk.netbank.adapter.util;
 
 import java.io.File;
 import java.io.IOException;
@@ -9,22 +9,15 @@ import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.kame.micropay.commons.FileUtil;
-import com.kame.micropay.commons.FileUtil.FilePermissionLevel;
-import com.kame.micropay.commons.TtyException;
-import com.kame.micropay.commons.config.properties.Property;
-import com.kame.micropay.commons.util.DateUtil;
-import com.kame.micropay.netbank.enums.TradeType;
-import com.kame.micropay.netbank.service.commons.Constants;
+import com.tangkuo.cn.pay.kmtk.netbank.common.Constants;
+import com.tangkuo.cn.pay.kmtk.netbank.common.FileUtil;
+import com.tangkuo.cn.pay.kmtk.netbank.common.FileUtil.FilePermissionLevel;
+import com.tangkuo.cn.pay.kmtk.netbank.common.TradeType;
+import com.tangkuo.cn.pay.kmtk.netbank.common.TtyException;
+import com.tangkuo.cn.pay.kmtk.netbank.common.util.DateUtil;
+import com.tangkuo.cn.pay.kmtk.netbank.common.util.Property;
 
 
-/** 
-* @ClassName: SettleUtil 
-* @Description: 对账工具类
-* @author fubin
-* @date 2015年9月8日 下午3:03:02 
-*  
-*/ 
 public class SettleUtil {
 	
 	private static final Logger log = LoggerFactory.getLogger(SettleUtil.class);
@@ -42,9 +35,9 @@ public class SettleUtil {
 	* @throws 
 	*/ 
 	public static String getTradeType(String type) {
-		if("Sale".equals(type)) return TradeType.B2C_PAY.name(); //abc
-		if("21".equals(type)) return TradeType.B2C_PAY.name(); //yspay
-		if("22".equals(type)) return TradeType.B2C_SINGLEREFUND.name(); //yspay
+		if("Sale".equals(type)) return TradeType.B2C_PAY; //abc
+		if("21".equals(type)) return TradeType.B2C_PAY; //yspay
+		if("22".equals(type)) return TradeType.B2C_SINGLEREFUND; //yspay
 		
 		return StringUtils.EMPTY;
 	}
@@ -110,7 +103,6 @@ public class SettleUtil {
 	* @param data ： 对账返回的数据
 	* @return void    返回类型 
 	* @throws TtyException 生成文件异常 
-	* @author Bill Huang
 	* @see http://blog.csdn.net/qiaqia609/article/details/11048463
 	* @see http://docs.oracle.com/javase/6/docs/api/java/io/File.html
 	*/

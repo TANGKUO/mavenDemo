@@ -1,13 +1,5 @@
-/**
- * Project Name:kame-bank
- * File Name:JsonUtil.java
- * Package Name:com.kame.micropay.netbank.service.adapter.util
- * Date:2016年3月9日上午11:42:54
- * Copyright (c) 2016, Kame-Pay All Rights Reserved.
- *
- */
 
-package com.kame.micropay.netbank.service.adapter.util;
+package com.tangkuo.cn.pay.kmtk.netbank.adapter.util;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -20,16 +12,6 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-/**
- * ClassName: JsonUtil <br/>
- * Function: Json操作类 <br/>
- * Reason: Json操作类. <br/>
- * date: 2016年3月9日 上午11:42:54 <br/>
- *
- * @author Bill Huang
- * @version 1.1
- * @since JDK 1.7
- */
 public class JsonUtil {
 
 	private static ObjectMapper objectMapper = new ObjectMapper();

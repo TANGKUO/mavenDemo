@@ -93,4 +93,14 @@ public final class Constants {
     public static final String ERROR_MSG = "msg";
     public static final String ERROR_SUB_CODE = "sub_code";
     public static final String ERROR_SUB_MSG = "sub_msg";
+
+	public static final String BOC_B2B_PFXCER = null;
+
+	public static final String BOC_B2B_PFXPASS = null;
+
+	public static final String BOC_B2B_SZBOCCER = null;
+
+	public static final String SETTLE_DOWNLOAD_PATH = null;
+
+	public static final String SETTLE_DOWNLOAD_FILETYPE = null;
 }

@@ -1,42 +1,23 @@
-/**
- * Project Name:kame-bank
- * File Name:YeePayUtil.java
- * Package Name:com.kame.micropay.netbank.service.adapter.util
- * Date:2016年5月3日下午3:44:01
- * Copyright (c) 2016, Kame-Pay All Rights Reserved.
- *
- */
-
-package com.kame.micropay.netbank.service.adapter.util;
+package com.tangkuo.cn.pay.kmtk.netbank.adapter.util;
 
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
-import java.util.Random;
 import java.util.Map.Entry;
+import java.util.Random;
 import java.util.TreeMap;
 
-import org.apache.commons.lang.StringUtils;
+import org.apache.commons.lang3.StringUtils;
+import org.bouncycastle.crypto.Digest;
+import org.bouncycastle.jce.provider.JCEBlockCipher.AES;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.TypeReference;
-import com.kame.micropay.commons.Constants;
-import com.kame.micropay.commons.signtype.AES;
-import com.kame.micropay.commons.signtype.Digest;
-import com.kame.micropay.commons.signtype.RSA;
+import com.tangkuo.cn.pay.kmtk.api.RSA;
+import com.tangkuo.cn.pay.kmtk.netbank.common.Constants;
 
-/**
- * ClassName: YeePayUtil <br/>
- * Function: 易宝支付 帮助类. <br/>
- * Reason: ADD REASON(可选). <br/>
- * date: 2016年5月3日 下午3:44:01 <br/>
- *
- * @author Bill Huang
- * @version 1.1
- * @since JDK 1.7
- */
 public class YeePayUtil {
 
 	private static Logger LOG = LoggerFactory.getLogger(YeePayUtil.class);

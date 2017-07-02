@@ -1,13 +1,5 @@
-/**
- * Project Name:kame-bank
- * File Name:PKCS7Util.java
- * Package Name:com.kame.micropay.netbank.service.adapter.util
- * Date:2015年12月31日下午2:19:39
- * Copyright (c) 2015, Kame-Pay All Rights Reserved.
- *
- */
 
-package com.kame.micropay.netbank.service.adapter.util;
+package com.tangkuo.cn.pay.kmtk.netbank.adapter.util;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -39,6 +31,9 @@ import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.tangkuo.cn.pay.kmtk.netbank.common.Constants;
+import com.tangkuo.cn.pay.kmtk.netbank.common.util.Property;
+
 import sun.misc.BASE64Decoder;
 import sun.misc.BASE64Encoder;
 import sun.security.pkcs.ContentInfo;
@@ -46,19 +41,7 @@ import sun.security.pkcs.PKCS7;
 import sun.security.pkcs.PKCS9Attributes;
 import sun.security.pkcs.SignerInfo;
 
-import com.kame.micropay.commons.config.properties.Property;
-import com.kame.micropay.netbank.service.commons.Constants;
 
-/**
- * ClassName: PKCS7Util <br/>
- * Function: ADD FUNCTION. <br/>
- * Reason: ADD REASON(可选). <br/>
- * date: 2015年12月31日 下午2:19:39 <br/>
- *
- * @author Bill Huang
- * @version 1.1
- * @since JDK 1.7
- */
 @SuppressWarnings("restriction")
 public class PKCS7Util {
 
