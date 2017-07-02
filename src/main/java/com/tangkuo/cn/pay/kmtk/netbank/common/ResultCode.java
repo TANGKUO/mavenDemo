@@ -1,13 +1,8 @@
-/**
- * Copyright (c) 2011-2014 All Rights Reserved.
- */
-package com.kame.micropay.commons;
+package com.tangkuo.cn.pay.kmtk.netbank.common;
 
 /**
- * 异常类<br>
+ * 异常类
  * 
- * @author xavier
- * @version $Id: ResultCode.java 2014年8月28日 下午6:21:20 $
  */
 public class ResultCode {
 

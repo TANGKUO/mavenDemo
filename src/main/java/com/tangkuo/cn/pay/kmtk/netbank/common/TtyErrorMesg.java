@@ -1,26 +1,7 @@
-/**
- * Project Name:kame-commons
- * File Name:TtyErrorMesg.java
- * Package Name:com.kame.micropay.commons
- * Date:2015年12月30日下午4:17:04
- * Copyright (c) 2015, Kame-Pay All Rights Reserved.
- *
- */
-
-package com.kame.micropay.commons;
+package com.tangkuo.cn.pay.kmtk.netbank.common;
 
 import java.io.Serializable;
 
-/**
- * ClassName: TtyErrorMesg <br/>
- * Function: ADD FUNCTION. <br/>
- * Reason: ADD REASON(可选). <br/>
- * date: 2015年12月30日 下午4:17:04 <br/>
- *
- * @author Bill Huang
- * @version 1.1
- * @since JDK 1.7
- */
 public class TtyErrorMesg implements Serializable {
 
 	/**

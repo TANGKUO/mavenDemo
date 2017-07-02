@@ -1,26 +1,7 @@
-/**
- * Project Name:kame-commons
- * File Name:TtyErrorCode.java
- * Package Name:com.kame.micropay.commons
- * Date:2015年12月30日下午4:09:25
- * Copyright (c) 2015, Kame-Pay All Rights Reserved.
- *
- */
-
-package com.kame.micropay.commons;
+package com.tangkuo.cn.pay.kmtk.netbank.common;
 
 import java.io.Serializable;
 
-/**
- * ClassName: TtyErrorCode <br/>
- * Function: ADD FUNCTION. <br/>
- * Reason: ADD REASON(可选). <br/>
- * date: 2015年12月30日 下午4:09:25 <br/>
- *
- * @author Bill Huang
- * @version 1.1
- * @since JDK 1.7
- */
 public class TtyErrorCode implements Serializable {
 
 	/**

@@ -1,14 +1,9 @@
-/**
- * Copyright (c) 2011-2014 All Rights Reserved.
- */
-package com.kame.micropay.commons;
+package com.tangkuo.cn.pay.kmtk.netbank.common;
 
 import java.io.Serializable;
 
 /**
  * 类说明：请求接口<br>
- * @author xavier
- * @version $Id: TtyRequest.java 2015年4月5日 下午2:28:55 $
  */
 public interface TtyRequest<T extends TtyResponse> extends Serializable {
 

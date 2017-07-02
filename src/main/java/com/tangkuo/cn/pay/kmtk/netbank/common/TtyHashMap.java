@@ -1,7 +1,4 @@
-/**
- * Copyright (c) 2011-2014 All Rights Reserved.
- */
-package com.kame.micropay.commons;
+package com.tangkuo.cn.pay.kmtk.netbank.common;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -11,13 +8,12 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.TimeZone;
 
-import com.kame.micropay.commons.util.StringUtils;
+import org.apache.commons.lang3.StringUtils;
+
 
 /**
  * 纯字符串字典结构。
  *
- * @author xavier
- * @version $Id: SfdaiHashMap.java 2014年9月13日 下午10:05:57 $
  */
 public class TtyHashMap extends HashMap<String, String> {
 
@@ -60,7 +56,7 @@ public class TtyHashMap extends HashMap<String, String> {
     }
 
     public String put(String key, String value) {
-        if (StringUtils.areNotEmpty(key, value)) {
+        if (StringUtils.isNotBlank(key) && StringUtils.isNotBlank(value) ) {
             return super.put(key, value);
         } else {
             return null;

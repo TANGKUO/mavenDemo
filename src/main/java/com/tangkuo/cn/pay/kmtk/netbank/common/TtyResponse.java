@@ -1,19 +1,13 @@
-/**
- * Copyright (c) 2011-2014 All Rights Reserved.
- */
-package com.kame.micropay.commons;
+package com.tangkuo.cn.pay.kmtk.netbank.common;
 
 import java.io.Serializable;
 import java.util.Map;
 
-import com.kame.micropay.commons.util.StringUtils;
+import org.apache.commons.lang3.StringUtils;
+
 
 /**
  * 基础响应信息
- * 
- * 
- * @author xavier
- * @version $Id: SfdaiResponse.java 2014年8月27日 下午6:37:04 $
  */
 public class TtyResponse implements Serializable {
 

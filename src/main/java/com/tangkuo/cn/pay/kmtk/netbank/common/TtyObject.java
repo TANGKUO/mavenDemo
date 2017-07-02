@@ -1,32 +1,8 @@
-/**
- * Copyright (c) 2011-2014 All Rights Reserved.
- */
-package com.kame.micropay.commons;
+package com.tangkuo.cn.pay.kmtk.netbank.common;
 
 import java.io.Serializable;
 
 import org.springframework.data.annotation.Id;
-
-/**
- * 类说明：<br>
- * 
- * <p>
- * 详细描述：<br>
- * 
- * </p>
- * 
- * <pre>
- * ——————————————————————————————————————————————————————————————————
- * |		修改人		|		修改时间			|		修改原因
- * ——————————————————————————————————————————————————————————————————
- * |	xavier 曾宪新	|		2014年4月25日		|	
- * ——————————————————————————————————————————————————————————————————
- * </pre>
- * 
- * @author xavier 曾宪新(Xavier.zeng)
- * 
- *         CreateDate: 2014年4月25日
- */
 public class TtyObject implements Serializable {
     
     private static final long serialVersionUID = -1133660048887177718L;

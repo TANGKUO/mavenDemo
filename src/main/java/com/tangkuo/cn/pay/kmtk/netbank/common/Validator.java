@@ -1,12 +1,7 @@
-/**
- * Copyright (c) 2011-2015 All Rights Reserved.
- */
-package com.kame.micropay.commons;
+package com.tangkuo.cn.pay.kmtk.netbank.common;
 
 /**
  * 验证器
- * @author zengxx
- * @version $Id: Validator.java 2015年8月20日 下午1:52:09 $
  */
 public interface Validator {
 	
