@@ -38,12 +38,6 @@ import org.slf4j.LoggerFactory;
 
 import com.tangkuo.cn.pay.kmtk.netbank.ObjectUtils;
 
-/**
- *
- *
- * @author Bill_Huang
- * @version $Id: HttpXmlClient.java 2015年10月28日 下午3:18:14 $
- */
 @SuppressWarnings("deprecation")
 public class HttpXmlClient {
 	

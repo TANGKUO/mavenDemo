@@ -169,7 +169,6 @@ public class SettleUtil {
 	* @param data ： 对账返回的数据
 	* @return void    返回类型 
 	* @throws TtyException 生成文件异常 
-	* @author Bill Huang
 	*/
 	public static void generateSettleFile(String bankCode, String gateWayName, String settleDate, String data) throws TtyException{
 		if(StringUtils.isEmpty(bankCode) || StringUtils.isEmpty(gateWayName) || StringUtils.isEmpty(settleDate) || StringUtils.isEmpty(data)){
